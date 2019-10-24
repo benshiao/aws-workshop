@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>___'s Website</title>
+</head>
+<body>
+  <h1>___'s Website</h1>
+  <p>Hosted on Amazon S3!</p>
+    <img src="https://avatars2.githubusercontent.com/u/11934626?s=280&v=4"
+    width="350"
+  height="350">
+</body>
+
+<header>
+    <h3> Mad Libs </h3>
+</header>
+<form action="YOUR_API_INVOKE_URL" method="post">
+  <div>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+  </div>
+  <div>
+  <label for="place">Place:</label>
+  <input type="text" id="place" name="place">
+  </div>
+  <div>
+  <label for="verb1">Verb 1:</label>
+  <input type="text" id="verb1" name="verb1">
+  </div>
+  <div>
+  <label for="noun">Noun:</label>
+  <input type="text" id="noun" name="noun">
+  </div>
+  <div>
+  <label for="verb2">Verb 2:</label>
+  <input type="text" id="verb2" name="verb2">
+  </div>
+  <div class="button">
+  <button type="submit" onclick="submittedFunc()">SUBMIT</button>
+  <p id="statustext"></p>
+  <script>
+    function submittedFunc() {
+      document.getElementById("statustext").innerHTML="Submitted";
+      document.getElementById("statustext").style.color="green";
+    }
+  </script>
+  </div>
+</form>
+
+
+</html>
