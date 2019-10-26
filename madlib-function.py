@@ -15,7 +15,7 @@ def lambda_handler(event, context):
     verb1 = body['verb1'][0]
     noun = body['noun'][0]
     verb2 = body['verb2'][0]
-    sentence = 'One day, there was a person named ' + str(name) + '. ' + str(name) + ' wanted to go to a ' + str(place) + \
+    sentence = 'One day, there was a person named ' + str(name) + '. ' + str(name) + ' wanted to go to ' + str(place) + \
     ' to ' + str(verb1) + ' as an undercover spy. However, ' + str(name) + ' ran into a ' + str(noun) + \
     ' and woke up with the ability to ' + str(verb2) + '.'
     return {
